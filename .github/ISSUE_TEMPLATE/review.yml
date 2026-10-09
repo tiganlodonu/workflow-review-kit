@@ -1,0 +1,39 @@
+name: Free public workflow report
+description: Request a public automated heuristic report. No payment required.
+title: '[Review request] Public workflow report'
+body:
+  - type: markdown
+    attributes:
+      value: 'Experimental free report for one to three public workflow files. No security audit or delivery-time guarantee. All fields and reports are public; never submit secrets or private material.'
+  - type: input
+    id: repository
+    attributes:
+      label: Public repository URL
+      placeholder: https://github.com/owner/repository
+    validations:
+      required: true
+  - type: checkboxes
+    id: public-output
+    attributes:
+      label: Public output and limitations
+      options:
+        - label: I understand that this request and its report are public and that the report is an automated heuristic review, not a security audit.
+          required: true
+  - type: markdown
+    attributes:
+      value: 'The fields below are optional. Leave them blank when requesting a report. After receiving your report, you may tip native USDC on Base and edit this issue to submit its public receipt details. No payment is required.'
+  - type: input
+    id: tip-transaction
+    attributes:
+      label: Optional tip transaction hash
+      placeholder: '0x followed by 64 hexadecimal characters'
+  - type: input
+    id: tip-sender
+    attributes:
+      label: Optional tip sender address
+      placeholder: 'Public 0x address only; never a seed phrase or private key'
+  - type: input
+    id: tip-amount
+    attributes:
+      label: Optional tip amount in USDC
+      placeholder: 'For example 5.00'
