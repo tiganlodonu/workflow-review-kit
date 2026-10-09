@@ -1,7 +1,9 @@
-# Setup status
+# Trial setup status
 
-The public workflow review demo is connected to the local runner for Markdown report publication.
+Free public workflow report requests and optional native USDC tips on Base are enabled. The request worker checks about every 15 minutes and handles at most one new report per check. The owner`s computer must remain awake and connected.
 
-Nine checker unit tests and eleven runner/connector tests passed locally. An encrypted GitHub credential is stored on the owner`s Windows computer; no credential is published here.
+A setup test for Conway-Research/automaton produced reports/request-1.md. This was a self-test, not a customer order. There are no verified tips or genuine customers yet.
 
-There is no live checkout, customer order processing, verified earnings ledger, or automatic reinvestment. This is an experimental demo, not an operating paid service.
+Twenty-three runner/connector/wallet/request tests passed locally, along with nine checker tests. Receipt verification has been tested with fixtures; no real tip has been received to validate a live payment.
+
+No paid checkout, transaction signing, automatic reinvestment, outreach, trading or paid API fallback exists. The ledger calculates a future 25% reinvestment ceiling but cannot spend funds. Free public services can rate-limit or fail; this is a trial, not a production service.
