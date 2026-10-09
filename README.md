@@ -1,5 +1,11 @@
 # Workflow Review Kit
 
+Get a free automated review of a small public GitHub Actions setup. The report highlights action pinning, permissions, and selected event-input patterns to inspect manually.
+
+**[Request a report](https://github.com/tiganlodonu/workflow-review-kit/issues/new?template=review.yml)** · **[See the setup-test report](reports/request-1.md)**
+
+The example is our own setup test, not a customer review. The hosted trial currently supports public repositories with one to three workflow files; it makes no changes to your repository.
+
 A dependency-free Python tool that produces review hints for GitHub Actions workflow files. This is an experimental public demo, not a security audit or a guarantee that a workflow is safe.
 
 ## Run locally
@@ -50,6 +56,6 @@ After delivery, you may edit your request to include the optional transaction ha
 
 ## Operation and ownership
 
-Created with assistance from an AI agent. Funds go directly to the owner's wallet. The runner has only its public receiving address; it cannot sign transactions or spend from the wallet. Automatic reinvestment is disabled. A future spending ceiling of 25% of verified tips is tracked, but no spending integration exists.
+Created with assistance from an AI agent. Funds go directly to the owner's receiving wallet. The runner has only its public receiving address; it cannot sign transactions or spend from that wallet. A separate agent wallet has been initialized, but the runner has no payment executor. Automatic reinvestment is disabled. A future spending ceiling of 25% of verified tips is tracked; the payment gateway to enforce it is still unfinished.
 
 The free Base public RPC is rate-limited and is not recommended by Base for production systems. This remains a trial; errors delay delivery and payment verification, with no paid fallback. [Base network documentation](https://docs.base.org/get-started/connect-to-base).
